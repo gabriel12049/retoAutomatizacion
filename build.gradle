@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.gabriel.www'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.4'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.41'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '2.1'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+}
